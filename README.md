@@ -7,9 +7,7 @@ Split any bill trustlessly on the Stellar blockchain. The creator opens a tab, s
 | | |
 |---|---|
 | **Frontend** | `https://splittab.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/splittab` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBK6JYENW6T35P27KG55IMKKBN2KJSGSF726AOMEFVX4CNL3HNUZI6E3` |
 
 ## How It Works
 
