@@ -6,8 +6,8 @@ Split any bill trustlessly on the Stellar blockchain. The creator opens a tab, s
 
 | | |
 |---|---|
-| **Frontend** | `https://splittab.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBK6JYENW6T35P27KG55IMKKBN2KJSGSF726AOMEFVX4CNL3HNUZI6E3` |
+| **Frontend** | `https://splittab-app.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBUNJODZG6LZLAIVVFGTL63FEEB65W5PQQGAVEAQ3ZQ5QZBCIQ6MV667` |
 
 ## How It Works
 
@@ -16,6 +16,16 @@ Split any bill trustlessly on the Stellar blockchain. The creator opens a tab, s
 3. When the **last participant** funds, the contract immediately transfers the full pot to the recipient
 4. Creator can **cancel** any time before completion — all funders get refunded automatically
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -42,3 +52,5 @@ count() -> u64
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
